@@ -7,9 +7,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class CommunityController {
-    @GetMapping("/hello")
-    public String SayHello(@RequestParam(name = "name") String name, Model model){
-        model.addAttribute("name",name);
+    @GetMapping("/")
+    public String SayHello(){
         return "index";
     }
 }
